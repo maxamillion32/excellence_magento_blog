@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Excellence_Pay>
+        <Storm_Pay>
             <version>0.1.0</version>
-        </Excellence_Pay>
+        </Storm_Pay>
     </modules>
     <frontend>
         <routers>
             <pay>
                 <use>standard</use>
                 <args>
-                    <module>Excellence_Pay</module>
+                    <module>Storm_Pay</module>
                     <frontName>pay</frontName>
                 </args>
             </pay>
@@ -36,11 +36,11 @@
     	</fieldsets>
         <models>
             <pay>
-                <class>Excellence_Pay_Model</class>
+                <class>Storm_Pay_Model</class>
                 <resourceModel>pay_mysql4</resourceModel>
             </pay>
             <pay_mysql4>
-                <class>Excellence_Pay_Model_Mysql4</class>
+                <class>Storm_Pay_Model_Mysql4</class>
                 <entities>
                     <pay>
                         <table>pay</table>
@@ -51,7 +51,7 @@
         <resources>
             <pay_setup>
                 <setup>
-                    <module>Excellence_Pay</module>
+                    <module>Storm_Pay</module>
                 </setup>
                 <connection>
                     <use>core_setup</use>
@@ -70,12 +70,12 @@
         </resources>
         <blocks>
             <pay>
-                <class>Excellence_Pay_Block</class>
+                <class>Storm_Pay_Block</class>
             </pay>
         </blocks>
         <helpers>
             <pay>
-                <class>Excellence_Pay_Helper</class>
+                <class>Storm_Pay_Helper</class>
             </pay>
         </helpers>
     </global>
@@ -85,7 +85,7 @@
                 <active>1</active>
                 <model>pay/pay</model>
                 <order_status>processing</order_status>
-                <title>Excellence Payment Method</title>
+                <title>Storm Payment Method</title>
                 <message>Please draw check in favour of Test Corporation: #XXXX-XXXX</message>
             </pay>
          </payment>
