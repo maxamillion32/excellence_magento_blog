@@ -1,5 +1,5 @@
 <?php
-class Excellence_Pay_Block_Info_Pay extends Mage_Payment_Block_Info
+class Storm_Pay_Block_Info_Pay extends Mage_Payment_Block_Info
 {
 	protected function _prepareSpecificInformation($transport = null)
 	{
